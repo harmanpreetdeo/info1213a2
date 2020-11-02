@@ -1,0 +1,112 @@
+<!--Author: Harmanpreet Deo 100386944-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="quil.png">
+
+    <title>Contct Me</title>
+  </head>
+  <body id="contact-page">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark"><!-- navigation bar-->
+      <a class="navbar-brand" href="#">Harmanpreet Deo</a> <!--Navigation brand -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> <!-- the hamburger toggle button when screen size is small-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item"> <!--Home Option in navigation bar -->
+            <a class="nav-link" href="index.html" data-toggle="popover" data-trigger="hover" data-content="takes you to home page">Home<span class="sr-only">(current)</span></a></a>
+          </li>
+          <li class="nav-item active"> <!--Contact Option in navigation bar -->
+            <a class="nav-link" href="contact.html" data-toggle="popover" data-trigger="hover" data-content="Active Page, also clicking it takes you to the contact page">Contact</a>
+          </li>
+          <li>
+            <div class="dropdown show"><!--Social Media dropdown Option in navigation bar -->
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Social Media
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="https://www.facebook.com/">Facebook Page</a>
+                <a class="dropdown-item" href="https://www.instagram.com/">Instagram Page</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline"> <!--search button with the search box in the navigation bar-->
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="popover" data-trigger="hover" data-content="Does nothing LOL" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container-fluid"><!--container containing the two columns in a row one having a message form while other having the profile links-->
+      <div class="row">
+        <div class="col-lg-5" id="message-form"> <!--column containing the message form-->
+          <div class="header1">
+            <h1 class="header-h1">CONTACT ME</h1> <!--heading for the message me form-->
+            <h3 class="header-h3">for interviews or collaborations</h3>
+            <hr class="header1-hr">
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFullname">Full Name</label> <!--form group for filling in the full name of the sender-->
+              <input type="text" class="form-control" data-toggle="popover" data-trigger="hover" data-content="put your full given name here" id="exampleInputFullname" aria-describedby="fullnameHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>  <!--form group for filling in the email address of the sender-->
+              <input type="email" class="form-control" data-toggle="popover" data-trigger="hover" data-content="put your email address here" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="input-group">  <!--input group for filling in the message of the sender-->
+              <div class="input-group-prepend">
+                <span class="input-group-text">Your Message</span>
+              </div>
+              <textarea class="form-control" data-toggle="popover" data-trigger="hover" data-content="we don't really need a popover here." aria-label="With textarea"></textarea> <!--actual text area to fill the message-->
+            </div>
+            <div class="custom-file"> <!--to upload the file online and send with the text message-->
+              <input type="file" class="custom-file-input" data-toggle="popover" data-trigger="hover" data-content="we definitely don't need one here" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+           <input type="submit" data-toggle="popover" data-trigger="hover" data-content="Hopefulle, I will reply..." class="form submit" value="SEND MESSAGE" /> <!-- the send message button at the bottom of the message form-->
+          </form>
+        </div>
+
+        <div class="col-lg-7" id="link-column"> <!--column on the right side containing image hyperlinks to business profile pages-->
+          <div class="jumbotron-fluid link-tron">
+            <h1>CHECK MY PROFILES</h1> <!--Heading for the check my proile section-->
+            <h3>LINKS BELOW</h3>
+            <hr>
+          </div>
+          <div class="row links"> <!-- row containing the image links in thw check profile section-->
+              <div class="col-md-6 linkbox"> <!--image link to linkedIn.com with the LinkedIn logo-->
+                <a href="https://ca.linkedin.com/"><img class="profileimg" data-toggle="popover" data-trigger="hover" data-content="take you to linkedIn" src="linkedin.webp" alt="linkedin logo"></a>
+              </div>
+              <div class="col-md-6 linkbox"><!--image link to Indeed.com with the Indeed logo-->
+                <a href="https://ca.indeed.com/"><img class="profileimg" data-toggle="popover" data-trigger="hover" data-content="takes you to indeed" src="indeed.png" alt="indeed logo"></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

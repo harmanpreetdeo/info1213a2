@@ -1,0 +1,298 @@
+/* Author: Harmanpreet Deo (100386944)
+Assignment 2 */
+body{
+  /* body of index.html or homepage */
+  background-color: #45046a;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 50px;
+  margin: 0;
+  color: white;
+}
+
+#contact-page{
+  /* body of the contact.html */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar{
+  /* navigation bar*/
+  margin-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand{
+  /*the Harmanpreet Deo written as the brand in index.html*/
+  font-family: serif;
+  font-size: 3rem;
+}
+
+.header{
+  /* the division for the page heading of index.html */
+  text-align: center;
+  font-size: 2rem;
+  font-family: serif;
+}
+
+.header1{
+  /* the division for the page heading of contact.html */
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 55px;
+  font-family: serif;
+  letter-spacing: 0.2rem;
+}
+
+.header1-hr{
+  /* the horizontaal line in the header1 divsion */
+  border-color: #ffff;
+}
+
+.header hr{
+  /* the horizontal line in the header division */
+  width: 30%;
+  line-height: 0;
+  border-color: #ffff;
+  margin-bottom: 100px;
+}
+
+.title-h2{
+  /* class for h2 heading in all the content titles*/
+  font-family: serif;
+}
+
+.para-title hr{
+  /*horizontal line for the section title*/
+  /* para-title: the title of a content section along with the horizontal line
+  both index.html and contact.html*/
+  border-color: #ffff;
+}
+
+#harman-pic{
+  /* my picture in the about me section*/
+  max-width: 100%;
+  max-height: 95%
+}
+
+.about-me{
+  /*about me section on home page*/
+  margin-bottom: 100px;
+}
+
+.about-me p{
+  /* paragraph in the about me section*/
+  font-size: 22px;
+  line-height: 35px;
+  font-family: serif;
+}
+
+.education{
+  /*education section on home page*/
+  margin-bottom: 100px;
+}
+
+.box{
+  /* class for the three boxes
+  containing images and links of universities in the eduaction section */
+  position: relative;
+  max-width:100%;
+  margin-bottom: 20px;
+}
+
+.campus{
+  /* the class for the images shown in the education section in index.html */
+  height: 300px;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+}
+
+.image_overlay{
+  /* change in appearance of the images along with the texts contained but not displayed*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width:100%;
+  text-align: center;
+  font-family: serif;
+  font-size: 1.5rem;
+  background: rgba(0 , 0, 0, 0.4);
+  opacity: 0;
+}
+
+.image_title{
+  /* image title with hyperlink to the university in education section*/
+  margin-top: 25%;
+}
+
+.image_overlay:hover{
+  /* change in appearance of the images along with the texts displayed but changed opacity
+  actually displays the text*/
+  opacity: 1;
+}
+
+.certifications{
+  /* the certification setion on home page */
+  margin-bottom: 100px;
+}
+
+.cardbox{
+  /* actual divsion containing the three cards in certification section */
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color: grey;
+  margin-top: 15px;
+}
+
+.lastcard{
+  /* the rightmost card showing the certification in the certifications section */
+  border-style: none;
+  margin-top: 15px;
+}
+
+.card{
+  /* the two cards before the lastcard */
+  background: transparent;
+  padding: 10px;
+  border-style: none;
+}
+
+.card-img-top{
+  /*the images right above the card body in the certification section*/
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto auto 20px auto;
+}
+
+.card-body{
+  /* card body showing the certifcation name and year of completion */
+  vertical-align: bottom;
+  padding: 20px;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+}
+
+.technical-skills{
+  /*technical skills section on home page*/
+  text-align: center;
+  font-family: serif;
+  font-size: 35px;
+  margin-bottom: 100px;
+}
+
+.carousel-item{
+  /*for the three slides which show the technical skills on the home page*/
+  padding: 5% 15% 5% 15%;
+}
+
+.jumbotron{
+  /*the jumbotron containing the content of the professional experience section on homepage*/
+  background-color: #6a197d;
+  padding: 10px;
+  border-radius: 4px;
+  border-style: groove;
+  border-color: white;
+  border-width: thin;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.exp-box{
+  /* the conatainer inside the fluid jumbotron that has rows and columns
+  in the experience section */
+  line-height: 40px;
+  font-size: 20px;
+  padding: 20px;
+  align-content: center;
+  border-style: none;
+}
+
+.exp-record{
+  /*the rows of the exp-box container division */
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;
+}
+
+#message-form{
+  /* id for the column containing the actual message form */
+  padding-right: 10%;
+}
+
+#link-column{
+  /* the id for the column to
+   the right of message form containing business profile links*/
+  padding-left: 10%;
+}
+
+.input-group{
+  /* input groups used in the message me form on Contact Me page*/
+  margin-bottom: 16px;
+}
+
+.custom-file{
+  /* sets the bottom margin for the input type allowing file submissions online */
+  margin-bottom: 16px;
+}
+
+form .submit{
+  /* the send message button in the form tag in contact.html*/
+  background: #c3aed6;
+  border-color: transparent;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.214em;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover{
+  /* change in the appearance of the send message button */
+  background-color: #8675a9;
+  cursor: pointer;
+}
+
+.link-tron{
+  /*jumbotron containing the links to business profile pages */
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 55px;
+  font-family: serif;
+  letter-spacing: 0.2rem;
+}
+
+.link-tron hr{
+  /* horizontal line in the check my profile section */
+  border-color: #ffff;
+}
+
+.links{
+  /* the main division for the profile page and home links, indeed and linkedin*/
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+
+.linkbox{
+  /* class for the three boxes containing the actual hyperlink images to the different profiles*/
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  margin:5px;
+}
+
+.profileimg{
+  /* class for the images or logos used in the hyperlinks on contact.html*/
+  max-height: 90px;
+  max-width: 90px;
+  height: auto;
+  width: auto;
+}

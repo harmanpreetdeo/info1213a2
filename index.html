@@ -1,0 +1,232 @@
+<!-- Author: Harmanpreet Deo 100386944 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="hat.png">
+
+    <title>Harmanpreet's Portfolio</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark"> <!-- navigation bar-->
+      <a class="navbar-brand" href="#">Harmanpreet Deo</a> <!--Navigation brand -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> <!-- the hamburger toggle button when screen size is small-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"> <!--Home Option in navigation bar -->
+            <a class="nav-link" href="index.html" data-toggle="popover" data-trigger="hover" data-content="Active Page, also takes you to home page">Home<span class="sr-only">(current)</span></a></a>
+          </li>
+          <li class="nav-item"><!--Contact Option in navigation bar -->
+            <a class="nav-link" href="contact.html" data-toggle="popover" data-trigger="hover" data-content="clicking it takes you to the contact page">Contact</a>
+          </li>
+          <li>
+            <div class="dropdown show"><!--Social Media dropdown Option in navigation bar -->
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Social Media
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="https://www.facebook.com/">Facebook Page</a>
+                <a class="dropdown-item" href="https://www.instagram.com/">Instagram Page</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline"> <!--search button with the search box in the navigation bar-->
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="popover" data-trigger="hover" data-content="Does nothing LOL" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="header">
+      <h3 class="header-h3">Work Portfolio</h3> <!--workportfolio heading-->
+      <hr class="header-hr">
+    </div>
+
+    <div class="para-title">
+      <h2 class="title-h2">ABOUT ME</h2> <!-- section heading for the About me section-->
+      <hr>
+    </div>
+
+    <section class="about-me">  <!-- contains the content divisions for the About me section-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5">
+            <img id="harman-pic" src="harman.png" data-toggle="popover" data-trigger="hover" data-content="Yeah this is me" alt="Harman's Profile Pic"> <!--Profile pic of Harmanpreet in the About me section-->
+          </div>
+          <div class="col-lg-7"> <!--contains the paragraph in the About me section-->
+            <p>My name is Harmanpreet Deo, I was born in July 3, 1999. I am an IT specialist with 2+ years of professional experience in information security and digital forensics. Expert with a wide variety of security, engineering, networking, and operating system software. Possesses an associate degree in technology and certification in Digital Forensics.
+              Experienced and knowledgeable Information Technology Professional seeking to contribute training and acquired skills within a Tier One/Tier 2 Help Desk support role or Network Support. Work well independently, or in a group setting providing all facets of computer support such as troubleshooting, installations, and maintenance. In-depth knowledge and understanding of numerous software packages and operating systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="para-title">
+      <h2 class="title-h2">EDUCATION</h2> <!-- section heading for the Education section-->
+      <hr>
+    </div>
+
+    <section class="education"> <!-- contains the content divisions for the About me section-->
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+            <img  class="campus" src="hqdefault.jpg" alt="capilano pic"> <!--Capilano University image in the education section-->
+            <div class="image_overlay">
+              <a href="https://www.capilanou.ca/" data-toggle="popover" data-trigger="hover" data-content="clicking it takes you to the cailano University homepage"><h5 class="image_title">Capilano University</h5></a>
+              <p class="image_descripton">Associates of Science<br>2019-2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+            <img class="campus"  src="cloverdale_campus_main.jpg" alt="kpu pic"> <!--KPU image in the education section-->
+            <div class="image_overlay">
+              <a href="https://www.kpu.ca" data-toggle="popover" data-trigger="hover" data-content="clicking it takes you to the Kwantlen polytechnic University homepage"><h5 class="image_title">Kwantlen Polytechnic University</h5></a>
+              <p class="image_descripton">Computer Information Systems Diploma<br>2020-2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+            <img class="campus" src="Bcit-university-school-burnaby.jpg" alt="bcit pic"> <!--BCIT image in the education section-->
+            <div class="image_overlay">
+              <a href="https://www.bcit.ca/study/?utm_source=search&utm_medium=cpc&utm_campaign=brand&utm_content=prospecting&gclid=EAIaIQobChMIqInjiZGK7AIVoh-tBh0p1g8nEAAYASAAEgK8p_D_BwE&gclsrc=aw.ds"  data-toggle="popover" data-trigger="hover" data-content="clicking it takes you to the BCIT homepage"><h5 class="image_title">BCIT</h5></a>
+              <p class="image_descripton"> Bachelors of Technology<br>2022-2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="para-title">
+      <h2 class="title-h2">CERTIFICATIONS</h2> <!-- section heading for the Certifications section-->
+      <hr>
+    </div>
+    <section class="certifications">  <!-- contains the content divisions for the Certifications section-->
+        <div class="row">
+          <div class="col-lg-4 cardbox"> <!--contains three cards showing the certifications achieved -->
+            <div class="card">
+               <img src="giac.png" class="card-img-top" alt="..."><!--GIAC certificate log in certifications  section-->
+               <div class="card-body">
+                 <h5>Computer Security and Forensics Certificate</h5>
+                 <p><strong>2022</strong></p>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 cardbox">
+            <div class="card">
+               <img src="cissp-logo.png" class="card-img-top" alt="..."> <!--CISSp certificate log in certifications  section-->
+               <div class="card-body">
+                 <h5>Certified Information Systems Security Professional</h5>
+                 <p><strong>2021</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 lastcard">
+            <div class="card">
+               <img src="microsoft.png" class="card-img-top" alt="..."> <!--Microsoft server certificate log in certifications  section-->
+               <div class="card-body">
+                 <h5>Microsoft Certified Systems Engineer</h5>
+                 <p><strong>2020</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="para-title">
+      <h2 class="title-h2">TECHNICAL SKILLS</h2> <!-- section heading for the Technical skills section-->
+      <hr>
+    </div>
+    <section class="technical-skills"> <!-- contains the content divisions for the Certifications section-->
+      <div id="carousel-skills" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-skills" data-slide-to="0" class="active"></li> <!--active carousel slide value 0-->
+          <li data-target="#carousel-skills" data-slide-to="1"></li>
+          <li data-target="#carousel-skills" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner"> <!-- content slides in carousel in skills section -->
+          <div class="carousel-item active">  <!--active slide's content-->
+            <p>McAfee SIEM/EPO/NSM, FireEye CMS/ETP, SecureWorks, IDS/IPS, Sumo Logic cloud-based log management</p>
+          </div>
+          <div class="carousel-item">
+            <p>SSL certificate configuration and management, Juniper NetScreen/Palo Alto Networks firewall <br>
+               Ollydbg, WinBdg, GBD, IDA Pro, PEiD, malware sandbox</p>
+          </div>
+          <div class="carousel-item">
+            <p>Wireshark/TCPView packet analysis, DNS servers, mail server <br>
+               Windows XP, Vista, 7, 8; Windows Server 2003, 2008, 2012; Linux including CentOS, Ubuntu, Arch, Debian, BackTrack, Kali</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-skills" role="button" data-slide="prev"> <!--previous link to go to preious slide-->
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-skills" role="button" data-slide="next"> <!--next link to go to next slide-->
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="para-title">
+      <h2 class="title-h2">PROFESSIONAL EXPERIENCE</h2> <!-- section heading for the Professional Experience section-->
+      <hr>
+    </div>
+    <section class="experience">  <!-- contains the content divisions for the experience section-->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container exp-box">
+          <div class="row exp-record"> <!-- row contains two columns each containing the company and year of working along with the services provided int the form of bullet points-->
+            <div class="col-lg-5">
+              <strong>SECURITY PROFESSIONALS INC.</strong>
+              <br>Columbia, SC <br>
+              <em>Security Operations Security Analyst: January 2022–present</em>
+            </div>
+            <div class="col-lg-7">
+              <ul>
+                <li>Monitor multiple security systems for a Fortune 500 company</li>
+                <li>Investigate arising incidents caused by malicious activities, and identified false positives</li>
+                <li>Documented security events daily to create a baseline of activity for the client network</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <strong>TECHNOLOGY SMARTS</strong>
+              <br>Charleston, SC <br>
+              <em>Network Operations Monitoring Technician: 2020-2022</em>
+            </div>
+            <div class="col-lg-7">
+              <ul>
+                <li>Refined and improved existing documentation system, resulting in reduced labor costs totaling $15,000 annually via increased workplace efficiency</li>
+                <li>Consolidated multiple ticketing systems, improving communication and ticket turnover rate by 7%</li>
+                <li>Investigated alerts created by IDS/IPS including malicious file uploads, compromised servers, SQL injections, and port scanning</li>
+                <li>Operated in a datacenter environment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
